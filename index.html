@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,html {
+            height: 100%;
+
+        }
+        ul {
+            list-style: none;
+            height: 500%;
+            background-color: darkcyan;
+        }
+        ul li {
+            height: 12%;
+            display: block;
+            font-size: 60px;
+            padding-top: 8%;
+            text-align: center;
+        }
+        ol {
+            list-style: none;
+            position: fixed;
+            top: 80px;
+            left: 50px;
+        }
+        ol li {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 50px;
+            margin-top: -1px;
+            cursor: pointer;
+        }
+        ol li.current{
+            background-color: darkorange;
+            color: #fff;
+        }
+        div.scrollspy{
+            width: 100%;
+            height: 100%;
+            background-color: darkorange;
+        }
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+
+<ul class="clearfix">
+    <li class="scrollspy">main section1</li>
+    <li class="scrollspy">main section2</li>
+    <li class="scrollspy">main section3</li>
+    <li class="scrollspy">main section4</li>
+    <li class="scrollspy">main section5</li>
+</ul>
+
+<div class="scrollspy">
+    main section6
+</div>
+
+<ol id="scrollspy">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ol>
+
+
+<script src="scrollspy.js"></script>
+</body>
+</html>
